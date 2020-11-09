@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Registration</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+	<div class="limiter">
+		<div class="container-login100">
+			<button class="login100-form-btn" style="background-color: #007BFF;">Login</button>
+			<div class="wrap-login100 p-t-50 p-b-90">
+				<form class="login100-form validate-form flex-sb flex-w">
+					<span class="login100-form-title p-b-51">
+						Kelengkapan Profil
+					</span>
+
+					<div class="wrap-input100 m-b-16">
+						<input class="input100" type="text" name="address" placeholder="Address" readonly>
+					</div>
+					
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Nama Harap Diisi">
+						<input class="input100" type="text" name="name" placeholder="Nama" required>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "WA Harap Diisi">
+						<input class="input100" type="text" name="wa" placeholder="Wa" required>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Alamat Harap Diisi">
+						<input class="input100" type="text" name="location" placeholder="Alamat" required>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Kota/Kabupaten Harap Diisi">
+						<input id="city" list="citylist" class="input100" type="text" name="city" placeholder="Kota/Kabupaten" autocomplete="off" required>
+						<datalist id="citylist"></datalist>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Provinsi Harap Diisi">
+						<input id="prov" list="provlist" class="input100" type="text" name="province" placeholder="Provinsi" autocomplete="off" required>
+						<datalist id="provlist"></datalist>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn">
+							Simpan
+						</button>
+					</div>
+				</form>
+			</div>
+			<button class="login100-form-btn" style="background-color: #DC3545;">Logout</button>
+		</div>
+		
+	</div>
+	
+	<div id="dropDownSelect1"></div>
+</body>
+</html>

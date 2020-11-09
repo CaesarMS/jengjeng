@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ogani | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="header__cart" style="text-align: center;">
+                        <h4 style="font-weight: 600;"></h4>
+                        <h6></h6>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="header__cart">
+                        <button class="site-btn" onclick="window.location.href = 'jual.html';">Mulai Berjualan</button>
+                        <div class="header__top__right__language">
+                            <div id="login">
+                                <button class="site-btn" style="background-color: #007BFF;">Login</button>
+                            </div>
+                            <div style="display: none;" id="isLogin">
+                                <span id="greeting"></span>
+                                <span class="arrow_carrot-down"></span>
+                                <ul>
+                                    <li><a href="profil.html">Profil</a></li>
+                                    <li><a href="pembelian.html">Pembelian</a></li>
+                                    <li class="seller"><a href="produk.html">Produk</a></li>
+                                    <li class="seller"><a href="penjualan.html">Penjualan</a></li>
+                                    <li><a>Deposit</a></li>
+                                    <li><a>Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Product Details Section Begin -->
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__pic">
+                        <div class="product__details__pic__item">
+                            <img class="product__details__pic__item--large" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__text">
+                        <h3></h3>
+                        <div class="product__details__price" style="margin-bottom: 0; padding-bottom: 0;">
+                            <table style="margin-bottom: 10px;"></table>
+                        </div>
+                        <p style="margin-bottom: 10px;"><b>Ongkir</b></p>
+                        <div class="checkout__input">
+                            <select id="ongkir"></select>
+                        </div>
+                        <p style="margin-bottom: 10px;"><b>Deadline</b></p>
+                        <div class="checkout__input">
+                            <select id="dl">
+                                <option value="1">1 Hari</option>
+                                <option value="2">2 Hari</option>
+                                <option value="3">3 Hari</option>
+                            </select>
+                        </div>
+                        <br><br>
+                        <p style="margin-bottom: 10px;"><b>Slot Pembeli</b></p>
+                        <div class="product__details__quantity">
+                            <div class="quantity">
+                                <div class="pro-qty">
+                                    <input type="text" value="1" name="qty" min="1">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a class="primary-btn" data-toggle="modal" data-target="#exampleModalCenter" style="color: #fff; cursor: pointer;">BELI</a>
+                        <ul style="margin-top: 20px;">
+                            <li><b>SKU</b> <span id="sku"></span></li>
+                            <li><b>Stok</b> <span id="stock"></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="product__details__tab">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" role="tab"
+                                    aria-selected="true" href="#tabs-1">Deskripsi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" role="tab"
+                                    aria-selected="false" href="#tabs-2">On Progress</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" role="tabpanel" id="tabs-1">
+                                <div class="product__details__tab__desc">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="tabs-2">
+                                <div class="product__details__tab__desc">
+                                    <div class="shoping__cart__table" style="border-color: black;">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Inisiator</th>
+                                                    <th>Slot</th>
+                                                    <th>Deadline</th>
+                                                    <th>Harga Satuan</th>
+                                                    <th>Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody> </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Details Section End -->
+
+    <!-- Price Modal Begin -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Checkout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6">
+                            <div class="checkout__order">
+                                <h4>Pesanan <span></span> </h4> 
+                                <div class="checkout__order__products">Produk <span>Harga Satuan</span></div>
+                                <ul>
+                                    <li id="pName"><span id="pPrice"></span></li>
+                                    <li>Ongkir<span id="ongkirP"></span></li>
+                                </ul>
+                                <div class="checkout__order__subtotal">Total (IDR) <span id="idr"></span></div>
+                                <div class="checkout__order__total">Total (ETH) <span id="tot"></span></div>
+                                <button class="site-btn" id="pay">BAYAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End -->
+
+    <!-- Join Modal Begin -->
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Pilih Ongkir</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6">
+                            <div class="checkout__order">
+                                <select id="ongkir2"></select>
+                                <div id="cekot">
+                                    <div class="checkout__order__subtotal" style="margin-top: 20px;">Total (IDR) <span id="idr2"></span></div>
+                                    <div class="checkout__order__total">Total (ETH) <span id="tot2"></span></div>
+                                    <button class="site-btn" id="pay2">BAYAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div>
+                            <span id="kurs"></span>
+                        </div>
+                        <div class="footer__copyright__text"><p id="aaa"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  <script>document.getElementById('aaa').innerHTML = 'Copyright &copy; ' + new Date().getFullYear();</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+</body>
+
+</html>
